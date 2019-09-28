@@ -3,7 +3,7 @@ package com.mightyjava;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(value = "eurekaclient-3" ,url = "http://localhost:8003/")
+@FeignClient(name = "eureka-client-3" )//,url = "http://localhost:8003/"
 public interface MyFeignClient {
 
 	@GetMapping
